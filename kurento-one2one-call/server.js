@@ -33,8 +33,11 @@ var argv = minimist(process.argv.slice(2), {
 
 var options =
 {
-  key:  fs.readFileSync('keys/server.key'),
-  cert: fs.readFileSync('keys/server.crt')
+  // key:  fs.readFileSync('keys/server.key'),
+  // cert: fs.readFileSync('keys/server.crt'),
+  key: fs.readFileSync('/etc/letsencrypt/live/t.tienn.com/privkey.pem'),
+  cert: fs.readFileSync('/etc/letsencrypt/live/t.tienn.com/cert.pem'),
+  ca: fs.readFileSync('/etc/letsencrypt/live/t.tienn.com/chain.pem')
 };
 
 var app = express();
