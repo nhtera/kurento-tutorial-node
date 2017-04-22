@@ -19,6 +19,6 @@
         "tests"
     ],
     "dependencies": {
-        "kurento-utils": "https://github.com/Kurento/kurento-utils-js.git#master"
+        "kurento-utils": "https://github.com/Kurento/kurento-utils-js.git#^6.6.1"
     }
 }
